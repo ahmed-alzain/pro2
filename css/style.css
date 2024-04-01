@@ -1,0 +1,89 @@
+body{
+    perspective: 700px; 
+
+}
+.home1{
+    height: 1200px;
+    width: 100%;
+    
+}
+.divtot,.front,.back{
+    width: 270px;
+    height: 420px;
+   
+}
+
+.front,.back{
+     position: absolute;  /*لظهور العنصرين فوق بعض*/
+}
+.back{
+    background-image: url(../images/back.jpg);
+    background-size: cover;
+    /* z-index: 0;  defolt */
+        transform:rotateY(180deg);  /*لظهور النص بالشكل الصحيح*/
+border-radius: 20px;
+text-align: center;
+box-shadow:  1px   1px   50px     10px    rgb(2, 2, 2)   inset ;
+
+}
+.back pre{
+    margin-top: 150px;
+    font-size: 19px;
+    font-style: oblique;
+    font-weight: bold;
+    color: rgb(40, 40, 40);
+}
+
+.front{
+    z-index: 1;
+ backface-visibility: hidden;    /*اخفاء الظهر الامامي*/
+ background-size: cover;
+ border-radius: 20px;
+ box-shadow:  1px   1px   30px     5px    rgb(0, 0, 0)  ;
+
+}
+.divtot{
+    position: relative;
+    transition: all  2s; 
+    transform-style:preserve-3d ;  /*من اجل ظهور طبقة الباك وسمك للعنصر */
+float: left;
+margin: 20px  80px;
+
+}
+.divtot:hover{
+    transform:rotatey(180deg);
+
+}
+section{
+    margin-top: 200px;
+}
+.divtot{
+    margin-bottom: 70px;
+    margin-left: 90px;
+}
+.b1{
+    background-image:url(../images/1.jpg) ;
+    background-size: cover;
+}
+.b2{
+     background-image:url(../images/2.jpg) ;
+    background-size: cover;
+}
+.b3{
+     background-image:url(../images/3.jpg) ;
+    background-size: cover;
+}
+.b4{
+     background-image:url(../images/4.jpg) ;
+    background-size: cover;
+}
+.b5{
+     background-image:url(../images/5.jpg) ;
+    background-size: cover;
+}
+.b6{
+     background-image:url(../images/6.jpg) ;
+    background-size: cover;
+}
+
+
